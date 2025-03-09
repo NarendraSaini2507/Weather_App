@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+}
+
+.loader {
+    animation: loader 500ms infinite alternate linear;
+}
+
+@keyframes loader {
+    form {
+        opacity: 1;
+        transform: translateX(-40px);
+    }
+
+    to {
+        opacity: 0.2;
+        transform: translateX(40px);
+    }
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+.card{
+    width: 350px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px grey;
+}
+input:focus{
+    outline: none;
+}
+input {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 25px;
+}
+
+#weather-box {
+    font-size: 30px;
+    display: flex;
+    margin: 40px 0;
+    color: white;
+}
